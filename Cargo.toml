@@ -7,4 +7,6 @@ edition = "2021"
 
 [dependencies]
 dioxus = "0.2.4"
+dioxus-html = "0.2.1"
 dioxus-tui = "0.2.2"
+tokio = "1.23.0"

@@ -269,7 +269,9 @@ name = "dioxus-tui-sample"
 version = "0.1.0"
 dependencies = [
  "dioxus",
+ "dioxus-html",
  "dioxus-tui",
+ "tokio",
 ]
 
 [[package]]
