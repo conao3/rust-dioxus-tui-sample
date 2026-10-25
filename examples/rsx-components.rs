@@ -2,25 +2,23 @@
 
 use dioxus::prelude::*;
 
-#[derive(Props)]
-struct TitleCardProps<'a> {
-    title: &'a str,
+#[derive(Props, Clone, PartialEq)]
+struct TitleCardProps {
+    title: String,
 }
 
-fn TitleCard<'a>(cx: Scope<'a, TitleCardProps<'a>>) -> Element {
-    cx.render(rsx!{
-        h1 { "{cx.props.title}" }
-    })
+fn TitleCard(props: TitleCardProps) -> Element {
+    rsx! {
+        h1 { "{props.title}" }
+    }
 }
 
-fn main() {
-    dioxus_tui::launch(app);
+fn main() -> anyhow::Result<()> {
+    dioxus_tui::launch(app)
 }
 
-fn app(cx: Scope) -> Element {
-    cx.render(rsx! (
-        TitleCard {
-            title: "hello world"
-        }
-    ))
+fn app() -> Element {
+    rsx! {
+        TitleCard { title: "hello world" }
+    }
 }

@@ -8,7 +8,7 @@ This project provides practical examples for learning Dioxus TUI, covering RSX s
 
 ## Requirements
 
-- Rust 1.60 or later
+- Rust 1.85 or later
 - Cargo
 
 ## Getting Started
@@ -45,7 +45,7 @@ cargo run --example rsx-iter
 
 ### Hooks
 
-**useState** - Managing component state:
+**useSignal** - Managing component state:
 
 ```bash
 cargo run --example hooks-usestate
@@ -69,14 +69,13 @@ cargo run --example tui-events
 
 | Crate | Version | Purpose |
 |-------|---------|---------|
-| dioxus | 0.2.4 | Core framework |
-| dioxus-html | 0.2.1 | HTML elements |
-| dioxus-tui | 0.2.2 | Terminal renderer |
-| tokio | 1.23.0 | Async runtime |
+| dioxus | 0.7.10 | Core framework and HTML elements |
+| dioxus-tui | 0.7.2 (pinned Git revision) | Terminal renderer |
+| tokio | 1.x | Async runtime for the timer example |
 
 ## Resources
 
-- [Dioxus Documentation](https://dioxuslabs.com/docs/0.3/guide/en/)
+- [Dioxus 0.7 Documentation](https://dioxuslabs.com/learn/0.7/)
 - [Dioxus GitHub](https://github.com/DioxusLabs/dioxus)
 
 ## License

@@ -1,20 +1,19 @@
 use dioxus::prelude::*;
-use dioxus_tui::prelude::*;
-use dioxus_html::FormData;
-use dioxus_tui::Config;
 
-fn main() {
-    dioxus_tui::launch_cfg(app, Config::new());
+fn main() -> anyhow::Result<()> {
+    dioxus_tui::launch_cfg(app, dioxus_tui::Config::new())
 }
 
-fn app(cx: Scope) -> Element {
-    let value = use_state(cx, || String::from("hello world"));
+fn app() -> Element {
+    let mut value = use_signal(|| String::from("hello world"));
 
-    cx.render(rsx! {
+    rsx! {
         div {
-            Input {
-                value: "a"
+            p { "Input text: {value}" }
+            input {
+                value: "{value}",
+                oninput: move |event| value.set(event.value()),
             }
         }
-    })
+    }
 }

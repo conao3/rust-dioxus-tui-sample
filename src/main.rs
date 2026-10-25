@@ -1,11 +1,11 @@
 use dioxus::prelude::*;
 
-fn main() {
-    dioxus_tui::launch(app);
+fn main() -> anyhow::Result<()> {
+    dioxus_tui::launch(app)
 }
 
-fn app(cx: Scope) -> Element {
-    cx.render(rsx! {
+fn app() -> Element {
+    rsx! {
         div {
             width: "100%",
             height: "10px",
@@ -14,5 +14,5 @@ fn app(cx: Scope) -> Element {
             align_items: "center",
             "Hello world!"
         }
-    })
+    }
 }
