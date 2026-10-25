@@ -1,17 +1,17 @@
 use dioxus::prelude::*;
 
-fn main() {
-    dioxus_tui::launch(app);
+fn main() -> anyhow::Result<()> {
+    dioxus_tui::launch(app)
 }
 
-fn app(cx: Scope) -> Element {
+fn app() -> Element {
     let names = ["jim", "bob", "jane", "doe", "a"];
 
-    cx.render(rsx! (
+    rsx! {
         ul {
-            names.iter().map(|name| rsx!{
+            for name in names {
                 li { key: "{name}", "{name}" }
-            })
+            }
         }
-    ))
+    }
 }
