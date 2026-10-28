@@ -8,7 +8,7 @@ This project provides practical examples for learning Dioxus TUI, covering RSX s
 
 ## Requirements
 
-- Rust 1.85 or later
+- Rust 1.98 or later
 - Cargo
 
 ## Getting Started
