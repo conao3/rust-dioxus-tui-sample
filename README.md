@@ -21,9 +21,15 @@ cd rust-dioxus-tui-sample
 cargo run
 ```
 
+![Main application: Hello world! on a red bar](images/main.png)
+
+The screenshots in this README show the sample data built into the code, running in the foot terminal.
+
 ## Examples
 
 ### RSX Basics
+
+![rsx-simple: interpolated and conditional strings](images/rsx-simple.png)
 
 **Simple RSX** - Basic RSX syntax with string interpolation and conditionals:
 
@@ -45,6 +51,8 @@ cargo run --example rsx-iter
 
 ### Hooks
 
+![hooks-usestate: a text value and an input field](images/hooks-usestate.png)
+
 **useSignal** - Managing component state:
 
 ```bash
@@ -58,6 +66,8 @@ cargo run --example hooks-usefuture
 ```
 
 ### Terminal Events
+
+![tui-events: the event area right after startup](images/tui-events.png)
 
 **Event Handling** - Mouse, keyboard, wheel, and focus events:
 
