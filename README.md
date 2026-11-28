@@ -1,4 +1,12 @@
-# Dioxus TUI Sample
+<p align="center"><img src="docs/assets/banner.png" alt="Dioxus TUI Sample: Rust examples for building terminal user interfaces with Dioxus" width="880"></p>
+
+<p align="center"><strong>Rust examples for building terminal user interfaces with Dioxus</strong></p>
+
+<p align="center"><a href="https://github.com/conao3/rust-dioxus-tui-sample/stargazers"><img src="https://img.shields.io/github/stars/conao3/rust-dioxus-tui-sample?style=flat" alt="GitHub stars"></a></p>
+
+<p align="center"><a href="#getting-started">Getting Started</a> | <a href="#examples">Examples</a> | <a href="#dependencies">Dependencies</a> | <a href="#license">License</a></p>
+
+<h1>Dioxus TUI Sample</h1>
 
 A collection of examples demonstrating [Dioxus](https://dioxuslabs.com/) for building terminal user interfaces in Rust.
 
